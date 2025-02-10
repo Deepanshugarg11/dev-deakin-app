@@ -1,0 +1,119 @@
+/* Container for the pricing plans */
+.pricing-container {
+  padding: 50px;
+  max-width: 1200px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.pricing-container h2 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Wrapper for vertical plan cards */
+.plans-wrapper {
+  display: flex;
+  flex-direction: column; /* Column layout for vertical stacking */
+  gap: 20px;
+  padding: 20px 0;
+  align-items: center; /* Center the cards */
+}
+
+.plan-card {
+  background: #fefefe;
+  border-radius: 12px;
+  padding: 20px; /* Reduce padding to make the cards smaller */
+  width: 90%; /* Make the cards take up 90% of the container width */
+  max-width: 350px; /* Set a maximum width for the cards */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid #007bff;
+  flex: 0 0 auto; /* Ensure cards are sized appropriately */
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.plan-card h3 {
+  font-size: 22px; /* Slightly smaller heading */
+  color: #34495e;
+  margin-bottom: 12px; /* Reduced space for a compact layout */
+  font-weight: 600;
+}
+
+.price {
+  font-size: 24px; /* Smaller price font size */
+  color: #007bff;
+  font-weight: 700;
+  margin-bottom: 20px; /* Reduced margin */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* List of features */
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px; /* Reduced margin */
+  color: #555;
+  font-size: 14px; /* Smaller font size for features */
+}
+
+.plan-card ul li {
+  padding: 10px 0; /* Reduced padding for list items */
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.plan-card ul li:before {
+  content: "✔";
+  color: #27ae60;
+  margin-right: 8px; /* Reduced spacing */
+  font-weight: bold;
+}
+
+/* Button styling */
+.plan-button {
+  width: 100%;
+  padding: 12px; /* Reduced padding for buttons */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px; /* Smaller font size for buttons */
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.plan-button.basic-button {
+  background: #3498db;
+}
+
+.plan-button.basic-button:hover {
+  background: #2980b9;
+}
+
+.plan-button.premium-button {
+  background: #e67e22;
+}
+
+.plan-button.premium-button:hover {
+  background: #d35400;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 1024px) {
+  .plans-wrapper {
+    flex-direction: column; /* Keep vertical layout */
+  }
+
+  .plan-card {
+    width: 90%; /* Keep cards at 90% width on smaller screens */
+    max-width: 320px; /* Adjust max-width for smaller screens */
+  }
+}

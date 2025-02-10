@@ -1,0 +1,73 @@
+.form-group {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  flex-basis: 130px; /* New basis for label */
+  font-weight: 700;
+  font-size: 16px; /* Adjusted font size */
+}
+
+.page-wrapper {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #e8eaf6; /* Slightly different background color */
+}
+
+.card-container {
+  background-color: #ffffff;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.15);
+  width: 430px; /* Slightly adjusted width */
+  min-height: 470px; /* Slightly different min height */
+}
+
+.submit-btn {
+  margin-top: 14px;
+  padding: 14px 28px;
+  background-color: #005bb5; /* New button color */
+  color: #f9f9f9;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 230px;
+  margin: 14px auto;
+  transition: background-color 0.25s ease; /* Slightly different transition */
+}
+
+.submit-btn:hover {
+  background-color: #003d73; /* Adjusted hover color */
+}
+
+.error-text {
+  color: #c9302c; /* Different shade for error text */
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.signup-text {
+  margin-top: 26px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 17px; /* New font size */
+}
+
+.signup-text a {
+  color: #005bb5; /* Adjusted link color */
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+  color: #003d73; /* Updated hover link color */
+}
